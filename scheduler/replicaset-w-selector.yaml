@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+   name: replicaset-1
+spec:
+   replicas: 2
+   selector:
+      matchLabels:
+        tier: front-end
+   template:
+     metadata:
+       labels:
+        tier: front-end
+     spec:
+       containers:
+       - name: nginx
+         image: nginx 
+
+# selector: Defines the selector used to identify the Pods controlled by this ReplicaSet.
+# matchLabels: Specifies the labels used to match Pods. In this case, the Pods must have a label "tier" with the value "front-end".
