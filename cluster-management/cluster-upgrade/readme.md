@@ -44,9 +44,9 @@ blue-987f68cb5-x6pb4   1/1     Running   0          20m   10.244.1.3   node01   
 ```
 In order to ensure minimum downtime, upgrade the cluster one node at a time, while moving the workloads to another node.
 
-What is the latest stable version of Kubernetes as of today?
-What is the latest version available for an upgrade with the current version of the kubeadm tool installed?
-Look at the remote version
+What is the latest stable version of Kubernetes as of today?  
+What is the latest version available for an upgrade with the current version of the kubeadm tool installed?  
+Look at the remote version (v1.27.3)
 ```
 controlplane ~ ➜ kubeadm upgrade plan
 [upgrade/config] Making sure the configuration is correct:
